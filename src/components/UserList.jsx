@@ -1,11 +1,11 @@
 import axios from 'axios'
 import React from 'react'
 
-//import de imagene
+//import de imagenes
 import dlt from '../assets/img/delete.png'
 import edit from '../assets/img/edit.png'
 
-const UserList = ({ user, getAllUsers, setUserUpd }) => {
+const UserList = ({ user, getAllUsers, setUserUpd, settitle}) => {
 
     const delet = () => {
         const URL = `https://users-crud.academlo.tech/users/${user.id}/`
@@ -16,6 +16,7 @@ const UserList = ({ user, getAllUsers, setUserUpd }) => {
 
     const editUser = () => {
         setUserUpd(user)
+        settitle('Edit User')
     }
 
     return (

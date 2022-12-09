@@ -7,6 +7,7 @@ import UserList from './components/UserList'
 function App() {
   const [users, setUsers] = useState()
   const [userUpd, setUserUpd] = useState()
+  const [title, settitle] = useState('New User')
 
   const getAllUsers = () => {
     const URL = `https://users-crud.academlo.tech/users/`
@@ -33,10 +34,18 @@ function App() {
       .catch(err => console.log(err))
   }
 
-  console.log(users)
-
   return (
     <div className="App">
+        <div className='userForm-container'>
+          <UserForm
+            createUser={createUser}
+            userUpd={userUpd}
+            userUpdate={userUpdate}
+            setUserUpd={setUserUpd}
+            title={title}
+            settitle={settitle}
+          />
+        </div>
       <div className='userList-container'>
         {
           users?.map(user => (
@@ -45,17 +54,10 @@ function App() {
               user={user}
               getAllUsers={getAllUsers}
               setUserUpd={setUserUpd}
+              settitle={settitle}
             />
           ))
         }
-      </div>
-      <div>
-        <UserForm
-          createUser={createUser}
-          userUpd={userUpd}
-          userUpdate={userUpdate}
-          setUserUpd={setUserUpd}
-        />
       </div>
     </div>
   )

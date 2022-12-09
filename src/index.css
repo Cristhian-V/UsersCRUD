@@ -1,0 +1,13 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button, input{
+  border: none;
+}
+input{
+  background-color: azure;
+  padding-left: 8px;
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.form{
+  padding: 10px;
+  width: 400px;
+}
+
+.form-imgContainer img{
+  width: 15px;
+  height: auto;
+  margin: auto;
+}
+
+.form-name-container{
+  display: flex;
+  justify-content: left ;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.form-email-container{
+  display: flex;
+  justify-content: left ;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.form-inputEmail, .form-inputPass{
+  width: 100%;
+}
+
+.form-password-container{
+  display: flex;
+  justify-content: left ;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.form-birthday-container{
+  display: flex;
+  justify-content: left ;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.form-button-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-button{
+  width: 300px;
+  height: 30px;
+  background-color: aquamarine;
+  border-radius: 15px;
+}
