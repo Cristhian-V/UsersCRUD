@@ -1,13 +1,28 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-button, input{
+button,
+input {
   border: none;
+  background-color: transparent;
 }
-input{
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
   background-color: azure;
   padding-left: 8px;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
 }

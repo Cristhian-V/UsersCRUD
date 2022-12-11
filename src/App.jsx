@@ -36,17 +36,17 @@ function App() {
 
   return (
     <div className="App">
-        <div className='userForm-container'>
-          <UserForm
-            createUser={createUser}
-            userUpd={userUpd}
-            userUpdate={userUpdate}
-            setUserUpd={setUserUpd}
-            title={title}
-            settitle={settitle}
-          />
-        </div>
-      <div className='userList-container'>
+      <div className='userForm-container'>
+        <UserForm
+          createUser={createUser}
+          userUpd={userUpd}
+          userUpdate={userUpdate}
+          setUserUpd={setUserUpd}
+          title={title}
+          settitle={settitle}
+        />
+      </div>
+      <div className='userList-global-container'>
         {
           users?.map(user => (
             <UserList
@@ -56,8 +56,7 @@ function App() {
               setUserUpd={setUserUpd}
               settitle={settitle}
             />
-          ))
-        }
+          ))}
       </div>
     </div>
   )
